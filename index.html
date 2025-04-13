@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuclear Reactor Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <h2>Reactor Controls</h2>
+      <button id="start-button">Start Reactor</button>
+      <div class="controls-section">
+        <button id="increase-power">Increase Power</button>
+        <button id="decrease-power">Decrease Power</button>
+      </div>
+      <div class="controls-section">
+        <button id="increase-coolant">Increase Coolant</button>
+        <button id="decrease-coolant">Decrease Coolant</button>
+      </div>
+      <h3 id="required-power">Required Power: 500 MW</h3>
+    </div>
+    <div class="status">
+      <div id="reactor-status">Reactor Status: Off</div>
+      <div id="reactor-status-text">Reactor Status: Off</div>
+      <div id="reactor-power">Power: 0 MW</div>
+      <div id="reactor-temperature">Temperature: 300°C</div>
+      <div id="coolant-level">Coolant Level: 50%</div>
+      <div id="temperature-status">Temperature Status: Normal</div>
+    </div>
+    <div class="explosion">
+      <img id="explosion" src="explosion.gif" alt="Explosion" style="display: none;" />
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
